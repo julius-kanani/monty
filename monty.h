@@ -1,6 +1,10 @@
 #ifndef MONTY_H
 #define MONTY_H
 
+/* makes stdio.h declare dprintf, to remove implicit declaration error */
+#define _POSIX_C_SOURCE 200809L
+#define _GNU_SOURCE
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
