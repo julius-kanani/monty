@@ -47,7 +47,7 @@ typedef struct instruction_s
  * @filename: filename
  * Description: data instance, line, args
  */
-typedef struct data_s
+typedef struct instance_s
 {
 	char *line;
 	char **args;
@@ -72,5 +72,9 @@ void pop_top(stack_t **stack, unsigned int line_number);
 void swap_top(stack_t **stack, unsigned int line_number);
 int _isdigit(char *str);
 void nothing(stack_t **stack, unsigned int line_number);
-
+void add_top_two(stack_t **stack, unsigned int line_number);
+void sub_top_two(stack_t **stack, unsigned int line_number);
+void div_top_two(stack_t **stack, unsigned int line_number);
+void mul_top_two(stack_t **stack, unsigned int line_number);
+void mod_top_two(stack_t **stack, unsigned int line_number);
 #endif /* _MONTY_H */
